@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP - (HyperText Markup Language)</title>
+</head>
+<body style="min-height: 6000px;">
+    <h1>Mi a HTTP?</h1>
+    <p>
+        A HTTP (HyperText Markup Language) egy hálózati kommunikációs 
+        protokoll, amely egy úgynevezett user agent és egy webszerver 
+        közötti kommunikácót ír le.
+    </p>
+
+    <h2>HTTP kérés</h2>
+    <p>
+        A HTTP kérés első sora <b>metódus erőforrás verzió alakú</b>. 
+        <ul>
+            <li>metódus: GET, POST, PUT, DELETE, HEAD, PATCH</li>
+            <li>erőforrás: az az erőforrás, amihez hozzá akarunk férni</li>
+            <li>verzió: a HTTP verziója (1.1 v 2.0)</li>
+        </ul>
+
+        <h3>Üzenettest</h3>
+        Az üzenetben fogadott/küldött adatok.
+
+        <h3>Fejlécállomány</h3>
+        A kérés vagy válasz beállításai és információk a küldőről.
+    </p>
+
+    <h3>HTTP metódusok</h3>
+    <ul>
+        <li>GET -> erőforrások lekérdezése</li>
+        <li>POST -> erőforrás létrehozása</li>
+        <li>PUT -> erőforrás teljes körű felülírása</li>
+        <li>PATCH -> részleges felülírás</li>
+        <li>DELETE -> törlés</li>
+        <li>HEAD -> ugyanaz, mint a GET, de üzenettest nélkül</li>
+    </ul>
+
+    <h2>HTTP válasz</h2>
+    <p>
+        A HTTP válasz első sora verzió státuszkód szöveges indoklás alakú.
+        <ul>
+            <li>verzió: HTTP verziója</li>
+            <li>státuszkód: információ a kérés állapotáról</li>
+            <li>szöveges indoklás: státuszkód emberi nyelven</li>
+        </ul>
+    </p>
+
+    <h3>Státuszkódok</h3>
+    <ul>
+        <li>1xx: informatív</li>
+        <li>2xx: OK</li>
+        <li>3xx: átirányítás</li>
+        <li>4xx: kliens hiba</li>
+        <li>5xx: szerver hiba</li>
+    </ul>
+
+    <h1>AJAX</h1>
+    <p>
+        Az AJAX (Asynchronous JavaScript and XML) aszinkron HTTP kérések 
+        JavaScript-ben.
+    </p>
+
+    <script src="ajax.js"></script>
+</body>
+</html>
