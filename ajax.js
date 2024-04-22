@@ -74,3 +74,5 @@ async function addProduct(product) {
 }
 
 addProduct({title:"iPhone 10"});
+
+console.log("Ez itt a módosítás");
